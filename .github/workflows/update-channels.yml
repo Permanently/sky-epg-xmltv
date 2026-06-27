@@ -1,0 +1,32 @@
+name: Update Sky channel lists
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"  # weekly, Sunday 03:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-channels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Discover channel lists for every region
+        run: python scripts/discover_channels.py --all --out-dir channels
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add channels
+          git diff --staged --quiet || git commit -m "Update Sky channel lists ($(date -u +%Y-%m-%d))"
+          git push

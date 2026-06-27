@@ -1,0 +1,18 @@
+{
+  "_comment": "name -> Sky SID. This is a starter set of national HD channels for testing. Regional channels (BBC One/ITV1 local variants) will need the discover_channels.py script run for your specific region - see README.",
+  "BBC One": "3000",
+  "BBC Two": "2075",
+  "BBC Three": "2080",
+  "BBC Four": "2086",
+  "BBC News": "2085",
+  "ITV1": "6504",
+  "Channel 4": "4075",
+  "Channel 5": "4058",
+  "Sky Showcase": "1275",
+  "Sky Witness": "4066",
+  "Sky Atlantic": "4053",
+  "Sky Max": "4061",
+  "Sky News": "4050",
+  "Sky Sports Main Event": "4002",
+  "Sky Sports Premier League": "4010"
+}
