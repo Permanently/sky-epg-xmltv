@@ -2,7 +2,7 @@ name: Update Sky EPG (all regions)
 
 on:
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "15 3 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -18,15 +18,14 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.14"
 
       - name: Build guides for every region
         working-directory: scripts
         run: |
           python build_all_guides.py \
             --days 7 \
-            --channels-dir ../channels \
-            --out-dir ../guides
+            --skip-discovery
 
       - name: Commit and push if changed
         run: |
