@@ -21,11 +21,7 @@ jobs:
           python-version: "3.14"
 
       - name: Build guides for every region
-        working-directory: scripts
-        run: |
-          python build_all_guides.py \
-            --days 7 \
-            --skip-discovery
+        run: python scripts/build_all_guides.py --days 7 --skip-discovery
 
       - name: Commit and push if changed
         run: |
@@ -33,4 +29,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add channels guides
           git diff --staged --quiet || git commit -m "Update Sky EPG ($(date -u +%Y-%m-%d))"
+          git pull --rebase origin main
           git push
