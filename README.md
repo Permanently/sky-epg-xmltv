@@ -99,13 +99,16 @@ something, don't use for bad.
 
 ## Running locally
 
-No third-party dependencies required, just =>Python 3.9.
+No third-party dependencies required - just Python 3.9+. Run scripts from the repo root, not
+from inside `scripts/` - the default `channels`/`guides` paths are relative to wherever you run
+from, and `cd`-ing into `scripts/` first will create `scripts/channels` and `scripts/guides`
+instead of the top-level ones.
 
 ```bash
 python scripts/build_all_guides.py --days 7
 ```
 
-Output lands in `../channels/*.json` and `../guides/*.xml`.
+Output lands in `channels/*.json` and `guides/*.xml`.
 
 For a single quick test against one hand-picked channel list (e.g. while developing), use
 `fetch_epg.py` with `channels/channels.example.json` instead - it's faster since it's not
@@ -113,9 +116,18 @@ discovering or building every region.
 
 ## Automation
 
-`.github/workflows/update-epg.yml` runs `build_all_guides.py` daily and commits the updated
-`channels/` and `guides/` directories if anything changed. Each region's guide ends up at a
-stable raw-GitHub-content URL, ready to feed into Plex, Jellyfin, TVHeadend, etc.
+Two scheduled workflows:
+
+- **`update-channels.yml`** - weekly (Sundays), runs `discover_channels.py --all` to refresh
+  `channels/*.json` from Sky's services endpoint. Channel/SID mappings rarely change, so this
+  doesn't need to run daily.
+- **`update-epg.yml`** - daily, runs `build_all_guides.py --skip-discovery` to fetch 7 days of
+  schedule data per unique SID and write `guides/*.xml`. `--skip-discovery` means it reads the
+  channel lists the weekly job already maintains instead of re-querying the services endpoint
+  every day; it'll fall back to discovering on the fly for any region missing a cached file.
+
+Each region's guide ends up at a stable raw-GitHub-content URL, ready to feed into Plex,
+Jellyfin, TVHeadend, etc.
 
 `channels/*.json` is committed deliberately, not just generated and discarded - it changes far
 less often than `guides/` (only when Sky actually reshuffles a SID), so it gives a cheap, readable
