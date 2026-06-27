@@ -67,6 +67,36 @@ python scripts/build_all_guides.py --days 7                  # every region (wha
 `data/regions.json` is the single source of truth for region codes - edit it to add/remove
 regions rather than touching any of the scripts.
 
+## Programme artwork and channel logos
+
+The EPG output is fully usable without either, and a miss just means an `<icon>` is silently
+omitted rather than a broken link being served. This is purely for cosmetic since I like logos :^)
+
+**Programme artwork.** Every schedule event includes a `programmeuuid`, which doubles as a key
+into Sky's separate image service at `images.metadata.sky.com`. Each programme gets two `<icon>`
+elements: a 16:9 landscape still and a 3:4 portrait crop. Both endpoints are undocumented (found
+by testing), so coverage isn't guaranteed for every programme (a generic news bulletin is less
+likely to have one than a film), but no extra requests are needed to attach them - the URL is
+just built directly from data already in the schedule response.
+
+**Channel logos.** Sourced from [tv-logo/tv-logos](https://github.com/tv-logo/tv-logos), matched
+by channel name. Sky's discovered channel names don't always slugify cleanly onto that repo's
+filenames (abbreviations, rebrands, regional variants), so matching is best-effort: a small
+manual override table handles known exceptions (e.g. "Sky One" -> `sky-max`, since the channel
+later rebranded), BBC One/Two regional variants resolve to their region-specific logo where one
+exists and fall back to the generic UK logo otherwise, and everything else goes through a
+camelCase-aware slugifier checked against the *actual* live file listing (via GitHub's API) - so
+a guess is only used if it's confirmed to exist, never just assumed.
+
+Logos are matched once during discovery (`discover_channels.py`, normally the weekly job) and
+baked into `channels/<region>.json` as `{"sid": "...", "icon": "... or null"}`, so the daily
+guide build doesn't need to re-query anything for them. Pass `--no-logos` to either script to
+skip logo matching (e.g. for faster iteration while testing).
+
+tv-logo/tv-logos' logos are free for personal use. No LICENSE file exists in that repo, just 
+README-stated terms: don't resell, don't use the logos in any "illegitimate" way. Something 
+something, don't use for bad.
+
 ## Running locally
 
 No third-party dependencies required, just =>Python 3.9.
@@ -109,4 +139,5 @@ git history of channel/SID changes over time without the daily programme-listing
 ## Credits
 
 - In grateful memory of Jesse Mann ("jesmannstl", affectionately known as the "EPG Master"), whose work and API research in [tvmerge](https://github.com/jesmannstl/tvmerge) helped inform this project's API usage patterns. His contributions to the IPTV community continue to benefit, even today 🕊️
+- Channel logos from [tv-logo/tv-logos](https://github.com/tv-logo/tv-logos) - free for personal use; please support the maintainer if you can.
 - Region bouquet and subBouquet codes sourced from community research in [iptv-org/epg#1133](https://github.com/iptv-org/epg/issues/1133).

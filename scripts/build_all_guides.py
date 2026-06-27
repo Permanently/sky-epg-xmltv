@@ -24,15 +24,22 @@ import sky_api
 DEFAULT_REGIONS_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "regions.json")
 
 
-def discover_region(key: str, rb: dict, channels_dir: str) -> dict[str, str]:
+def discover_region(key: str, rb: dict, channels_dir: str, logo_index: set[str] | None) -> dict[str, dict]:
     services = sky_api.fetch_services(rb["bouquet"], rb["subBouquet"])
-    chmap = {s["t"]: str(s["sid"]) for s in services if s.get("t") and s.get("sid")}
+    channels = {}
+    for s in services:
+        name, sid = s.get("t"), s.get("sid")
+        if not (name and sid):
+            continue
+        icon = sky_api.logo_url(name, logo_index) if logo_index is not None else None
+        channels[name] = {"sid": str(sid), "icon": icon}
+
     with open(os.path.join(channels_dir, f"{key}.json"), "w", encoding="utf-8") as f:
-        json.dump(chmap, f, indent=2, sort_keys=True)
-    return chmap
+        json.dump(channels, f, indent=2, sort_keys=True)
+    return channels
 
 
-def load_cached_region(key: str, channels_dir: str) -> dict[str, str] | None:
+def load_cached_region(key: str, channels_dir: str) -> dict[str, dict] | None:
     path = os.path.join(channels_dir, f"{key}.json")
     if not os.path.exists(path):
         return None
@@ -54,6 +61,7 @@ def main() -> None:
         help="Read existing channels/<region>.json instead of re-discovering from Sky. "
         "Falls back to discovering if a region has no cached file yet.",
     )
+    parser.add_argument("--no-logos", action="store_true", help="Skip logo matching on fallback discovery")
     args = parser.parse_args()
 
     with open(args.regions_file, "r", encoding="utf-8") as f:
@@ -68,23 +76,26 @@ def main() -> None:
     os.makedirs(args.channels_dir, exist_ok=True)
     os.makedirs(args.out_dir, exist_ok=True)
 
-    region_channels: dict[str, dict[str, str]] = {}
+    region_channels: dict[str, dict[str, dict]] = {}
     all_sids: dict[str, str] = {}
+    logo_index = None  # only fetched lazily, if a fallback discovery is actually needed
 
     for key in sorted(regions):
         rb = regions[key]
         chmap = load_cached_region(key, args.channels_dir) if args.skip_discovery else None
 
         if chmap is None:
+            if logo_index is None and not args.no_logos:
+                logo_index = sky_api.fetch_logo_index()
             print(f"[discover] {key} (bouquet {rb['bouquet']}/{rb['subBouquet']})")
-            chmap = discover_region(key, rb, args.channels_dir)
+            chmap = discover_region(key, rb, args.channels_dir, logo_index)
             time.sleep(args.delay)
         else:
             print(f"[cached] {key}: {len(chmap)} channels")
 
         region_channels[key] = chmap
-        for name, sid in chmap.items():
-            all_sids.setdefault(sid, name)
+        for name, info in chmap.items():
+            all_sids.setdefault(info["sid"], name)
 
     print(f"\n{len(all_sids)} unique channel SIDs across {len(regions)} regions\n")
 

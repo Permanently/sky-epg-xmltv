@@ -23,13 +23,13 @@ def main() -> None:
     args = parser.parse_args()
 
     with open(args.channels, "r", encoding="utf-8") as f:
-        channels: dict[str, str] = json.load(f)
+        channels: dict[str, dict] = json.load(f)
     channels.pop("_comment", None)
 
     sid_events: dict[str, list[dict]] = {}
-    for name, sid in channels.items():
-        print(f"Fetching {name} ({sid})...")
-        sid_events[sid] = sky_api.fetch_sid_events(sid, args.days, delay=args.delay)
+    for name, info in channels.items():
+        print(f"Fetching {name} ({info['sid']})...")
+        sid_events[info["sid"]] = sky_api.fetch_sid_events(info["sid"], args.days, delay=args.delay)
 
     count = sky_api.write_xmltv(args.out, channels, sid_events)
     print(f"Wrote {args.out}: {len(channels)} channels, {count} programmes")
