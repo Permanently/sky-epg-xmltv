@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# channels
+channels/*_sd.json
+channels/*_hd.json
