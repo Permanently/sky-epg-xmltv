@@ -137,16 +137,50 @@ LOGO_OVERRIDES = {
     # Sky's abbreviated/rebranded names don't slugify cleanly - map the exceptions by hand.
     "discovery": "discovery-channel",
     "nat geo": "national-geographic",
-    "natgeo wild": "national-geographic-wild",
+    "nat geo wild": "national-geographic-wild",
+    "natgeowild": "national-geographic-wild",
     "id": "investigation-discovery",
     "crime+inv": "crime-and-investigation",
     "sky one": "sky-max",
     "comedycent": "comedy-central",
     "5": "channel-5",
+    "5 HD": "channel-5",
+    "5+1": "channel-5-plus",
     "4": "channel-4",
+    "al jazeera": "aljazeera",
+    "al jazeera hd": "aljazeera",
+    "animal plnt+1": "animal-planet-plus",
     "bbc parl": "bbc-parliament",
+    "bbc parl hd": "bbc-parliament",
+    "cartoon netwrk": "cartoon-network",
+    "cn+1": "cartoon-network-plus",
     "cbeebies": "bbc-cbeebies",
     "cbbc": "bbc-cbbc",
+    "comedyxtra": "comedy-central-extra",
+    "disc.history": "discovery-history",
+    "disc.history+1": "discovery-history-plus",
+    "disc.science": "discovery-science",
+    "disc.sci+1": "discovery-science-plus",
+    "disc.turbo": "discovery-turbo",
+    "disc.turbo+1": "discovery-turbo-plus",
+    "high street tv 1": "high-street-tv",
+    "high street tv 2": "high-street-tv",
+    "more4": "4-more",
+    "more4+1": "4-more-plus",
+    "now 90s & 00s": "now-90s",
+    "nicktoons": "nick-toons",
+    "premier 1": "premier-sports-1",
+    "premier 2": "premier-sports-2",
+    "sony tv": "sony-entertainment-television",
+    "tjc": "tjc-the-jewellery-channel",
+    "true crime x": "true-crime-xtra",
+    "talkingpictures": "talking-pictures-tv",
+    "together": "together-tv",
+    "u&alibi+1": "alibi-plus", # should be u-and-alibi-plus but not on tv-logos rn
+    "u&davejavu": "u-and-dave-javu",
+    "u&eden+1": "eden-plus", # same story as alibi
+    "u&gold+1": "gold-plus", # again, same story
+    "revelation": "revelation-tv",
     # Bloomberg - no plain bloomberg-*.png exists in any country; bloomberg-television-us.png
     # is the canonical brand logo and the only unambiguous match.
     "bloomberg": "bloomberg-television",
@@ -184,6 +218,13 @@ LOGO_PATH_OVERRIDES = {
     # Channels where stem-matching can't resolve cleanly because the same stem exists in
     # multiple countries with no UK option (ambiguous) - map directly to the preferred path.
     "cnbc": "countries/world-europe/cnbc-eu.png",
+    "aaj tak": "countries/india/aaj-tak-in.png",
+    "aastha": "countries/india/aastha-in.png",
+    "euronews": "countries/international/euro-news-int.png",
+    "france 24": "countries/international/france-24-english-int.png",
+    "get sky products": "misc/media/sky.png", # lol
+    "my sky": "misc/media/sky.png", # i like comprehensiveness
+    "travelxp": "countries/world-africa/travelxp-afr.png"
 }
 
 
