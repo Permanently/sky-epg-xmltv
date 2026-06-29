@@ -273,6 +273,11 @@ def match_logo(name: str, logo_map: dict[str, list[str]]) -> str | None:
         if match:
             return match
 
+    # fallback: if no +1 logo, just use original
+    if re.search(r"\+\s*1\s*$", name.strip()):
+        base_name = re.sub(r"\+\s*1\s*$", "", name.strip()).strip()
+        return match_logo(base_name, logo_map)
+
     return None
 
 
