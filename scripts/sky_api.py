@@ -7,7 +7,10 @@ from __future__ import annotations
 
 import json
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -17,8 +20,9 @@ SCHEDULE_API = "https://awk.epgsky.com/hawk/linear/schedule"
 SERVICES_API = "https://awk.epgsky.com/hawk/linear/services"
 IMAGE_BASE_URL = "https://images.metadata.sky.com/pd-image"
 
-LOGO_INDEX_API = "https://api.github.com/repos/tv-logo/tv-logos/contents/countries/united-kingdom"
-LOGO_BASE_URL = "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom"
+LOGO_REPO_URL = "https://github.com/tv-logo/tv-logos.git"
+LOGO_RAW_BASE = "https://raw.githubusercontent.com/tv-logo/tv-logos/main"
+LOGO_SKIP_SUBDIRS = {"hd", "obsolete", "other", "screen-bug"}
 
 # Undocumented API - identify ourselves and don't hammer it.
 USER_AGENT = "sky-epg-xmltv/1.0 (+https://github.com/Permanently/sky-epg-xmltv)"
@@ -79,12 +83,54 @@ def fetch_sid_events(sid: str, days: int, delay: float = DEFAULT_REQUEST_DELAY) 
 
 # ---- Channel logos (tv-logo/tv-logos) -------------------------------------
 
+_STEM_RE = re.compile(r"^(.+)-([a-z]{2,4})\.png$")
+
+
 def fetch_logo_index() -> set[str]:
-    """Live filenames in tv-logo/tv-logos' UK directory, e.g. {'bbc-one-uk.png', ...}."""
-    data = _get_json(LOGO_INDEX_API)
-    if not isinstance(data, list):
+    """Every PNG's repo-relative path, e.g. {'countries/united-kingdom/bbc-one-uk.png', ...}.
+
+    Uses a blobless git clone (tree only, no image bytes - ~500KB vs the ~400MB the
+    repo's images actually total) rather than GitHub's REST API, since the API's
+    anonymous rate limit (60/hr) is shared across a wider IP pool than expected and
+    proved unreliable even for a single call in testing."""
+    tmp_dir = tempfile.mkdtemp(prefix="tv-logos-")
+    try:
+        subprocess.run(
+            ["git", "clone", "--filter=blob:none", "--no-checkout", "--depth=1", LOGO_REPO_URL, tmp_dir],
+            check=True, capture_output=True, timeout=120,
+        )
+        result = subprocess.run(
+            ["git", "-C", tmp_dir, "ls-tree", "-r", "HEAD", "--name-only"],
+            check=True, capture_output=True, text=True, timeout=30,
+        )
+    except Exception as e:  # noqa: BLE001
+        print(f"  Failed to fetch logo index: {e}", file=sys.stderr)
         return set()
-    return {item["name"] for item in data if item.get("type") == "file" and item["name"].endswith(".png")}
+    finally:
+        shutil.rmtree(tmp_dir, ignore_errors=True)
+
+    paths = set()
+    for line in result.stdout.splitlines():
+        if not line.endswith(".png") or not line.startswith("countries/"):
+            continue
+        parts = line.split("/")
+        if len(parts) >= 3 and parts[2] in LOGO_SKIP_SUBDIRS:
+            continue  # hd/obsolete/other/screen-bug - not real channel logos
+        paths.add(line)
+    return paths
+
+
+def build_logo_map(logo_index: set[str]) -> dict[str, list[str]]:
+    """Precomputed once: {stem: [matching paths across all countries]}.
+    A stem is the filename minus its trailing 2-4 letter country-code suffix, so
+    'bbc-one-uk.png' -> stem 'bbc-one'. This O(n) pass means each channel lookup
+    afterwards is an O(1) dict get rather than a regex scan of the whole index."""
+    mapping: dict[str, list[str]] = {}
+    for path in logo_index:
+        m = _STEM_RE.match(path.rsplit("/", 1)[-1])
+        if m:
+            mapping.setdefault(m.group(1), []).append(path)
+    return mapping
 
 
 LOGO_OVERRIDES = {
@@ -93,9 +139,51 @@ LOGO_OVERRIDES = {
     "nat geo": "national-geographic",
     "natgeo wild": "national-geographic-wild",
     "id": "investigation-discovery",
-    "crime+inv": "crime-investigation",
+    "crime+inv": "crime-and-investigation",
     "sky one": "sky-max",
     "comedycent": "comedy-central",
+    "5": "channel-5",
+    "4": "channel-4",
+    "bbc parl": "bbc-parliament",
+    "cbeebies": "bbc-cbeebies",
+    "cbbc": "bbc-cbbc",
+    # Bloomberg - no plain bloomberg-*.png exists in any country; bloomberg-television-us.png
+    # is the canonical brand logo and the only unambiguous match.
+    "bloomberg": "bloomberg-television",
+    # TNT Sports Box Office (Sky abbreviates the channel name heavily)
+    "tntsboxoff": "tnt-sports-box-office",
+    "tntsboxoff2": "tnt-sports-box-office-2",
+    # Sky Cinema - Sky's on-screen names drop "Cinema" entirely
+    "sky action": "sky-cinema-action",
+    "sky drama": "sky-cinema-drama",
+    "sky family": "sky-cinema-family",
+    "sky greats": "sky-cinema-greats",
+    "sky scfi/hor": "sky-cinema-sci-fi-and-horror",
+    "sky thriller": "sky-cinema-thriller",
+    "skydocmntrs": "sky-documentaries",
+    "skydocumntrs": "sky-documentaries",
+    "skyminions": "sky-cinema-animation",
+    "skypremiere": "sky-cinema-premiere",
+    # Sky Sports - Sky uses the "SkySp" prefix for all Sky Sports channels
+    "skysp action": "sky-sports-action",
+    "skysp f'ball": "sky-sports-football",
+    "skysp f1": "sky-sports-f1",
+    "skysp golf": "sky-sports-golf",
+    "skysp mix": "sky-sports-mix",
+    "skysp news": "sky-sports-news",
+    "skysp pl": "sky-sports-premier-league",
+    "skysp racing": "sky-sports-racing",
+    "skysp tennis": "sky-sports-tennis",
+    "skysp+": "sky-sports-plus-hz",  # no plain sky-sports-plus-uk.png; -hz variant exists
+    "skyspboxoff": "sky-sports-box-office",
+    "skyspcricket": "sky-sports-cricket",
+    "skyspmainev": "sky-sports-main-event",
+}
+
+LOGO_PATH_OVERRIDES = {
+    # Channels where stem-matching can't resolve cleanly because the same stem exists in
+    # multiple countries with no UK option (ambiguous) - map directly to the preferred path.
+    "cnbc": "countries/world-europe/cnbc-eu.png",
 }
 
 
@@ -116,59 +204,81 @@ def _override_key(name: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-def _bbc_region_logo(name: str, logo_index: set[str]) -> str | None:
-    lname = name.lower()
-    for brand, generic in (("bbc one", "bbc-one-uk.png"), ("bbc two", "bbc-two-uk.png")):
-        if not lname.startswith(brand):
-            continue
-        prefix = brand.replace(" ", "-")
-        candidate = None
-        if "scot" in lname:
-            candidate = f"{prefix}-scotland-uk.png"
-        elif "wal" in lname or "cymru" in lname:
-            candidate = f"{prefix}-wales-uk.png"
-        elif "northern ireland" in lname or " ni " in f" {lname} ":
-            candidate = f"{prefix}-northern-ireland-uk.png"
-        if candidate and candidate in logo_index:
-            return candidate
-        return generic  # English regions, or a brand with no region-specific variant
-    return None
-
-
 def _logo_candidates(name: str):
+    has_plus = bool(re.search(r"\+\s*1\s*$", name.strip()))
+    override = LOGO_OVERRIDES.get(_override_key(name))
+    if override:
+        if has_plus:
+            yield f"{override}-plus"
+        yield override
+
     cleaned = _split_camel(name)
     cleaned = re.sub(r"\s*\+\s*1\s*$", " plus", cleaned)
     cleaned = re.sub(r"\bHD\b", "", cleaned, flags=re.IGNORECASE)
     cleaned = cleaned.replace("&", " and ").replace(".", " ")
-    yield _slugify(cleaned)
+    base = _slugify(cleaned)
+    yield base
     yield _slugify(re.sub(r"([A-Za-z])(\d)", r"\1 \2", cleaned))
     yield _slugify(re.sub(r"(\d)([A-Za-z])", r"\1 \2", cleaned))
+    yield base.replace("-", "")  # squashed, e.g. "al-jazeera" -> "aljazeera"
 
 
-def match_logo(name: str, logo_index: set[str]) -> str | None:
-    """Best-effort channel name -> tv-logos filename. Returns None on no match -
-    callers should skip the <icon> entirely rather than guess at a broken URL."""
-    region = _bbc_region_logo(name, logo_index)
+def _match_stem(stem: str, logo_map: dict[str, list[str]]) -> str | None:
+    matches = logo_map.get(stem)
+    if not matches:
+        return None
+    uk = [p for p in matches if p.startswith("countries/united-kingdom/")]
+    if uk:
+        return uk[0]
+    if len(matches) == 1:
+        return matches[0]
+    return None  # same stem in 2+ different countries with no UK option - too ambiguous to guess
+
+
+def _bbc_region_logo(name: str, logo_map: dict[str, list[str]]) -> str | None:
+    """BBC One/Two have real per-nation logos for Scotland/Wales/NI, but the many
+    English regional variants (Tyne, London, etc.) all share the plain generic logo,
+    which the general stem-matching won't find on its own (no file is named e.g.
+    'bbc-one-tyne')."""
+    lname = name.lower()
+    for brand in ("bbc one", "bbc two"):
+        if not lname.startswith(brand):
+            continue
+        generic_stem = brand.replace(" ", "-")
+        stem = generic_stem
+        if "scot" in lname:
+            stem = f"{generic_stem}-scotland"
+        elif "wal" in lname or "cymru" in lname:
+            stem = f"{generic_stem}-wales"
+        elif "northern ireland" in lname or " ni " in f" {lname} ":
+            stem = f"{generic_stem}-northern-ireland"
+
+        return _match_stem(stem, logo_map) or _match_stem(generic_stem, logo_map)
+    return None
+
+
+def match_logo(name: str, logo_map: dict[str, list[str]]) -> str | None:
+    """Best-effort channel name -> tv-logos repo-relative path. Returns None on no
+    confident match - callers should skip the <icon> entirely rather than guess."""
+    path = LOGO_PATH_OVERRIDES.get(_override_key(name))
+    if path:
+        return path
+
+    region = _bbc_region_logo(name, logo_map)
     if region:
         return region
 
-    override = LOGO_OVERRIDES.get(_override_key(name))
-    if override:
-        fname = f"{override}-uk.png"
-        if fname in logo_index:
-            return fname
-
     for cand in _logo_candidates(name):
-        fname = f"{cand}-uk.png"
-        if fname in logo_index:
-            return fname
+        match = _match_stem(cand, logo_map)
+        if match:
+            return match
 
     return None
 
 
-def logo_url(name: str, logo_index: set[str]) -> str | None:
-    fname = match_logo(name, logo_index)
-    return f"{LOGO_BASE_URL}/{fname}" if fname else None
+def logo_url(name: str, logo_map: dict[str, list[str]]) -> str | None:
+    path = match_logo(name, logo_map)
+    return f"{LOGO_RAW_BASE}/{path}" if path else None
 
 
 # ---- XMLTV building --------------------------------------------------------

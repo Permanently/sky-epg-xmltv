@@ -24,14 +24,14 @@ import sky_api
 DEFAULT_REGIONS_FILE = os.path.join(os.path.dirname(__file__), "..", "data", "regions.json")
 
 
-def discover_region(key: str, rb: dict, channels_dir: str, logo_index: set[str] | None) -> dict[str, dict]:
+def discover_region(key: str, rb: dict, channels_dir: str, logo_map: dict[str, list[str]] | None) -> dict[str, dict]:
     services = sky_api.fetch_services(rb["bouquet"], rb["subBouquet"])
     channels = {}
     for s in services:
         name, sid = s.get("t"), s.get("sid")
         if not (name and sid):
             continue
-        icon = sky_api.logo_url(name, logo_index) if logo_index is not None else None
+        icon = sky_api.logo_url(name, logo_map) if logo_map is not None else None
         channels[name] = {"sid": str(sid), "icon": icon}
 
     with open(os.path.join(channels_dir, f"{key}.json"), "w", encoding="utf-8") as f:
@@ -78,17 +78,17 @@ def main() -> None:
 
     region_channels: dict[str, dict[str, dict]] = {}
     all_sids: dict[str, str] = {}
-    logo_index = None  # only fetched lazily, if a fallback discovery is actually needed
+    logo_map = None  # only fetched lazily, if a fallback discovery is actually needed
 
     for key in sorted(regions):
         rb = regions[key]
         chmap = load_cached_region(key, args.channels_dir) if args.skip_discovery else None
 
         if chmap is None:
-            if logo_index is None and not args.no_logos:
-                logo_index = sky_api.fetch_logo_index()
+            if logo_map is None and not args.no_logos:
+                logo_map = sky_api.build_logo_map(sky_api.fetch_logo_index())
             print(f"[discover] {key} (bouquet {rb['bouquet']}/{rb['subBouquet']})")
-            chmap = discover_region(key, rb, args.channels_dir, logo_index)
+            chmap = discover_region(key, rb, args.channels_dir, logo_map)
             time.sleep(args.delay)
         else:
             print(f"[cached] {key}: {len(chmap)} channels")

@@ -28,14 +28,14 @@ def load_regions(path: str) -> dict[str, dict[str, int]]:
         return json.load(f)
 
 
-def discover_one(bouquet: int, sub_bouquet: int, logo_index: set[str] | None) -> dict[str, dict]:
+def discover_one(bouquet: int, sub_bouquet: int, logo_map: dict[str, list[str]] | None) -> dict[str, dict]:
     services = sky_api.fetch_services(bouquet, sub_bouquet)
     result = {}
     for s in services:
         name, sid = s.get("t"), s.get("sid")
         if not (name and sid):
             continue
-        icon = sky_api.logo_url(name, logo_index) if logo_index is not None else None
+        icon = sky_api.logo_url(name, logo_map) if logo_map is not None else None
         result[name] = {"sid": str(sid), "icon": icon}
     return result
 
@@ -59,16 +59,16 @@ def main() -> None:
             print(key)
         return
 
-    logo_index = None if args.no_logos else sky_api.fetch_logo_index()
-    if logo_index is not None:
-        print(f"Logo index: {len(logo_index)} known UK logos")
+    logo_map = None if args.no_logos else sky_api.build_logo_map(sky_api.fetch_logo_index())
+    if logo_map is not None:
+        print(f"Logo index: {len(logo_map)} matchable logo stems across all countries")
 
     if args.all:
         os.makedirs(args.out_dir, exist_ok=True)
         for key in sorted(regions):
             rb = regions[key]
             print(f"Discovering {key}...")
-            channels = discover_one(rb["bouquet"], rb["subBouquet"], logo_index)
+            channels = discover_one(rb["bouquet"], rb["subBouquet"], logo_map)
             out_path = os.path.join(args.out_dir, f"{key}.json")
             with open(out_path, "w", encoding="utf-8") as f:
                 json.dump(channels, f, indent=2, sort_keys=True)
@@ -83,7 +83,7 @@ def main() -> None:
         sys.exit(1)
 
     rb = regions[region_key]
-    channels = discover_one(rb["bouquet"], rb["subBouquet"], logo_index)
+    channels = discover_one(rb["bouquet"], rb["subBouquet"], logo_map)
     out_path = args.out or os.path.join("channels", f"{region_key}.json")
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
