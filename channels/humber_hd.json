@@ -1,10 +1,14 @@
 {
+  "2026RecapHD": {
+    "icon": null,
+    "sid": "4020"
+  },
   "4seven": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-seven-uk.png",
     "sid": "3150"
   },
   "5 HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/channel-5-uk.png",
     "sid": "4058"
   },
   "5 USA": {
@@ -12,7 +16,7 @@
     "sid": "3022"
   },
   "5+1": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/channel-5-plus-uk.png",
     "sid": "1839"
   },
   "5ACTION": {
@@ -36,7 +40,7 @@
     "sid": "3027"
   },
   "AAJ TAK": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/aaj-tak-in.png",
     "sid": "3255"
   },
   "APNA MA TV": {
@@ -52,7 +56,7 @@
     "sid": "6753"
   },
   "Aastha": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/aastha-in.png",
     "sid": "3594"
   },
   "Adult Channel": {
@@ -68,7 +72,7 @@
     "sid": "5087"
   },
   "Al Jazeera HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/aljazeera-uk.png",
     "sid": "1023"
   },
   "Animal Planet": {
@@ -176,7 +180,7 @@
     "sid": "3017"
   },
   "BBC Parl HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-parliament-uk.png",
     "sid": "3020"
   },
   "BBC R Cymru": {
@@ -292,7 +296,7 @@
     "sid": "4100"
   },
   "Bloomberg HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/bloomberg-television-us.png",
     "sid": "1074"
   },
   "Boomerang": {
@@ -303,16 +307,12 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/boomerang-plus-uk.png",
     "sid": "5603"
   },
-  "BridgetJonesHD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "CBBC HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-cbbc-uk.png",
     "sid": "2078"
   },
   "CBeebies HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/bbc-cbeebies-uk.png",
     "sid": "2088"
   },
   "CHSTV": {
@@ -324,11 +324,11 @@
     "sid": "5610"
   },
   "CNBC HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-europe/cnbc-eu.png",
     "sid": "1088"
   },
   "CNN HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnn-us.png",
     "sid": "1019"
   },
   "COLORS": {
@@ -372,7 +372,7 @@
     "sid": "1673"
   },
   "Channels 24": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-africa/channels-24-afr.png",
     "sid": "5520"
   },
   "Chl Line-up": {
@@ -400,7 +400,7 @@
     "sid": "3916"
   },
   "ComedyCent+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/comedy-central-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/comedy-central-plus-uk.png",
     "sid": "3802"
   },
   "ComedyCentHD": {
@@ -420,15 +420,15 @@
     "sid": "1207"
   },
   "Crime+Inv": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/crime-and-investigation-uk.png",
     "sid": "1448"
   },
   "Crime+Inv HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/crime-and-investigation-uk.png",
     "sid": "4088"
   },
   "Crime+Inv+1": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/crime-and-investigation-plus-uk.png",
     "sid": "3620"
   },
   "Cruise1st.tv": {
@@ -488,7 +488,7 @@
     "sid": "4003"
   },
   "Discovery+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/discovery-channel-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/discovery-channel-plus-uk.png",
     "sid": "2404"
   },
   "Disney Jr HD": {
@@ -500,7 +500,7 @@
     "sid": "1190"
   },
   "Dunamis TV": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-africa/dunamis-tv-afr.png",
     "sid": "1191"
   },
   "E4": {
@@ -536,15 +536,15 @@
     "sid": "1121"
   },
   "Faith World TV": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/faith-world-tv-int.png",
     "sid": "4404"
   },
   "Film4": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/film-4-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/hungary/film4-hu.png",
     "sid": "1627"
   },
   "Film4 HD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/film-4-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/hungary/film4-hu.png",
     "sid": "4044"
   },
   "Film4+1": {
@@ -580,7 +580,7 @@
     "sid": "4110"
   },
   "GOD Channel": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/god-channel-int.png",
     "sid": "3105"
   },
   "GTC Punjabi": {
@@ -651,6 +651,10 @@
     "icon": null,
     "sid": "8331"
   },
+  "HiddenGemsHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "High Street TV 1": {
     "icon": null,
     "sid": "3580"
@@ -668,7 +672,7 @@
     "sid": "2413"
   },
   "ID+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/investigation-discovery-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/investigation-discovery-plus-uk.png",
     "sid": "5452"
   },
   "IQRA Bangla": {
@@ -764,7 +768,7 @@
     "sid": "3845"
   },
   "LoveWorld HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/loveworld-uk.png",
     "sid": "1228"
   },
   "MTA1 World HD": {
@@ -844,7 +848,7 @@
     "sid": "3682"
   },
   "NTD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/ntd-int.png",
     "sid": "3731"
   },
   "NTV": {
@@ -864,7 +868,7 @@
     "sid": "1847"
   },
   "Nat Geo+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/national-geographic-uk.png",
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/national-geographic-plus-uk.png",
     "sid": "1822"
   },
   "NatGeoWild HD": {
@@ -1068,7 +1072,7 @@
     "sid": "3355"
   },
   "Sanskar": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sanskar-in.png",
     "sid": "1100"
   },
   "Shop Unlimited": {
@@ -1080,7 +1084,7 @@
     "sid": "3650"
   },
   "Sky Action HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-action-uk.png",
     "sid": "4014"
   },
   "Sky Arts": {
@@ -1124,15 +1128,15 @@
     "sid": "4330"
   },
   "Sky Drama HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-drama-uk.png",
     "sid": "4016"
   },
   "Sky Family HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-family-uk.png",
     "sid": "4018"
   },
   "Sky Greats HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-greats-uk.png",
     "sid": "4015"
   },
   "Sky History": {
@@ -1180,7 +1184,7 @@
     "sid": "4061"
   },
   "Sky ScFi/HorHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-sci-fi-and-horror-uk.png",
     "sid": "4017"
   },
   "Sky Sci-Fi": {
@@ -1192,7 +1196,7 @@
     "sid": "4074"
   },
   "Sky Thriller HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-thriller-uk.png",
     "sid": "4062"
   },
   "Sky Witness": {
@@ -1208,83 +1212,79 @@
     "sid": "2205"
   },
   "SkyDocmntrsHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1136"
   },
   "SkyDocumntrs": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
   },
-  "SkyMinionsHD": {
-    "icon": null,
-    "sid": "4020"
-  },
   "SkyNewsArabia": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
     "sid": "4645"
   },
   "SkyPremiereHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-premiere-uk.png",
     "sid": "4021"
   },
   "SkySp ActionHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-action-uk.png",
     "sid": "4022"
   },
   "SkySp F'ball HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-football-uk.png",
     "sid": "3939"
   },
   "SkySp F1 HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-f1-uk.png",
     "sid": "3835"
   },
   "SkySp Golf HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-golf-uk.png",
     "sid": "4026"
   },
   "SkySp Mix": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-mix-uk.png",
     "sid": "4091"
   },
   "SkySp Mix HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-mix-uk.png",
     "sid": "4090"
   },
   "SkySp News": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-news-uk.png",
     "sid": "1314"
   },
   "SkySp News HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-news-uk.png",
     "sid": "4049"
   },
   "SkySp PL HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-premier-league-uk.png",
     "sid": "4010"
   },
   "SkySp Racing HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-racing-uk.png",
     "sid": "4032"
   },
   "SkySp Tennis HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-tennis-uk.png",
     "sid": "1284"
   },
   "SkySp+ HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-plus-hz-uk.png",
     "sid": "3940"
   },
   "SkySpBoxOffHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-box-office-uk.png",
     "sid": "1035"
   },
   "SkySpCricket HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-cricket-uk.png",
     "sid": "4081"
   },
   "SkySpMainEvHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4002"
   },
   "Smooth": {
@@ -1332,11 +1332,11 @@
     "sid": "3141"
   },
   "TNTSBoxOff2HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-2-uk.png",
     "sid": "1099"
   },
   "TNTSBoxOffHD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-uk.png",
     "sid": "1210"
   },
   "TNTSports1 HD": {
@@ -1356,11 +1356,11 @@
     "sid": "4040"
   },
   "TRT World": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-world-tr.png",
     "sid": "5071"
   },
   "TRT World HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/turkey/trt-world-tr.png",
     "sid": "5237"
   },
   "TRUE CRIME": {
@@ -1376,7 +1376,7 @@
     "sid": "3602"
   },
   "TV One": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/indonesia/tv-one-id.png",
     "sid": "5426"
   },
   "TV Warehouse": {
@@ -1384,7 +1384,7 @@
     "sid": "3632"
   },
   "TVC News": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-africa/tvc-news-afr.png",
     "sid": "5882"
   },
   "TVX 40+": {
@@ -1520,7 +1520,7 @@
     "sid": "4191"
   },
   "Zee Cinema": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/zee-cinema-in.png",
     "sid": "2608"
   },
   "Zee Punjabi": {
