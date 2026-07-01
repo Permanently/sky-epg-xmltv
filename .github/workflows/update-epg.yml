@@ -2,7 +2,7 @@ name: Update Sky EPG (all regions)
 
 on:
   schedule:
-    - cron: "15 3 * * *"
+    - cron: "5 0 * * *"
   workflow_dispatch: {}
 
 permissions:
