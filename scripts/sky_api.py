@@ -165,11 +165,13 @@ LOGO_OVERRIDES = {
     "high street tv 2": "high-street-tv",
     "more4": "4-more",
     "more4+1": "4-more-plus",
+    "ndtv world": "ndtv-24x7",
     "now 90s & 00s": "now-90s",
     "nicktoons": "nick-toons",
     "premier 1": "premier-sports-1",
     "premier 2": "premier-sports-2",
     "sony tv": "sony-entertainment-television",
+    "tbn uk": "tbn",
     "tjc": "tjc-the-jewellery-channel",
     "true crime x": "true-crime-xtra",
     "talkingpictures": "talking-pictures-tv",
@@ -218,14 +220,20 @@ LOGO_OVERRIDES = {
 LOGO_PATH_OVERRIDES = {
     # Channels where stem-matching can't resolve cleanly because the same stem exists in
     # multiple countries with no UK option (ambiguous) - map directly to the preferred path.
+    "arirang tv": "countries/international/arirang-int.png",
     "cnbc": "countries/world-europe/cnbc-eu.png",
     "aaj tak": "countries/india/aaj-tak-in.png",
     "aastha": "countries/india/aastha-in.png",
     "euronews": "countries/international/euro-news-int.png",
+    "ewtn catholic": "countries/international/ewtn-int.png",
     "france 24": "countries/international/france-24-english-int.png",
     "get sky products": "misc/media/sky.png", # lol
+    "ion tv": "countries/united-states/ion-television-us.png",
     "my sky": "misc/media/sky.png", # i like comprehensiveness
-    "travelxp": "countries/world-africa/travelxp-afr.png"
+    "nhk world": "countries/international/nhk-world-hd-int.png",
+    "sky news arabia": "countries/world-middle-east/sky-news-arabia-mea.png",
+    "travelxp": "countries/world-africa/travelxp-afr.png",
+    "zee tv": "countries/india/zee-tv-in.png",
 }
 
 
