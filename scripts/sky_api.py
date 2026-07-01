@@ -153,6 +153,7 @@ LOGO_OVERRIDES = {
     "cn+1": "cartoon-network-plus",
     "cbeebies": "bbc-cbeebies",
     "cbbc": "bbc-cbbc",
+    "clubland tv": "clubland",
     "comedyxtra": "comedy-central-extra",
     "disc.history": "discovery-history",
     "disc.history+1": "discovery-history-plus",
