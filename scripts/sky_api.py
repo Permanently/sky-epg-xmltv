@@ -144,14 +144,11 @@ LOGO_OVERRIDES = {
     "sky one": "sky-max",
     "comedycent": "comedy-central",
     "5": "channel-5",
-    "5 HD": "channel-5",
     "5+1": "channel-5-plus",
     "4": "channel-4",
     "al jazeera": "aljazeera",
-    "al jazeera hd": "aljazeera",
     "animal plnt+1": "animal-planet-plus",
     "bbc parl": "bbc-parliament",
-    "bbc parl hd": "bbc-parliament",
     "cartoon netwrk": "cartoon-network",
     "cn+1": "cartoon-network-plus",
     "cbeebies": "bbc-cbeebies",
@@ -198,6 +195,9 @@ LOGO_OVERRIDES = {
     "skydocumntrs": "sky-documentaries",
     "skyminions": "sky-cinema-animation",
     "skypremiere": "sky-cinema-premiere",
+    # Sky Cinema Comedy is labelled as "Sky Comedy HD"
+    # mixes up with the actual "Sky Comedy" channel, which is entirely different
+    "sky comedy hd": "sky-cinema-comedy",
     # Sky Sports - Sky uses the "SkySp" prefix for all Sky Sports channels
     "skysp action": "sky-sports-action",
     "skysp f'ball": "sky-sports-football",
@@ -238,16 +238,17 @@ def _slugify(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
-def _override_key(name: str) -> str:
+def _override_key(name: str, keep_hd: bool = False) -> str:
     s = name.strip().lower().replace(".", " ")
     s = re.sub(r"\s*\+\s*1\s*$", "", s)
-    s = re.sub(r"\s*hd\s*$", "", s)
+    if not keep_hd:
+        s = re.sub(r"\s*hd\s*$", "", s)
     return re.sub(r"\s+", " ", s).strip()
 
 
 def _logo_candidates(name: str):
     has_plus = bool(re.search(r"\+\s*1\s*$", name.strip()))
-    override = LOGO_OVERRIDES.get(_override_key(name))
+    override = LOGO_OVERRIDES.get(_override_key(name, keep_hd=True)) or LOGO_OVERRIDES.get(_override_key(name))
     if override:
         if has_plus:
             yield f"{override}-plus"
