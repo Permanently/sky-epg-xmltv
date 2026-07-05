@@ -36,7 +36,7 @@
     "sid": "2402"
   },
   "Arirang TV HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/arirang-int.png",
     "sid": "1066"
   },
   "Arise News": {
@@ -264,7 +264,7 @@
     "sid": "3300"
   },
   "EWTN Catholic": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/ewtn-int.png",
     "sid": "4163"
   },
   "Eman Channel": {
@@ -354,10 +354,6 @@
   "Help and Support": {
     "icon": null,
     "sid": "8331"
-  },
-  "HiddenGemsHD": {
-    "icon": null,
-    "sid": "4033"
   },
   "High Street TV 1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/high-street-tv-uk.png",
@@ -472,11 +468,11 @@
     "sid": "8040"
   },
   "NDTV World": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/ndtv-24x7-uk.png",
     "sid": "1821"
   },
   "NHK World HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/nhk-world-hd-int.png",
     "sid": "3147"
   },
   "NTD": {
@@ -519,8 +515,8 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-uk.png",
     "sid": "4039"
   },
-  "Nick Jr. Too": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-too-uk.png",
+  "NickJrPAWPatrol": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-paw-patrol-uk.png",
     "sid": "5192"
   },
   "Nickelodeon": {
@@ -839,6 +835,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1230"
   },
+  "SkyMinionsHD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-animation-uk.png",
+    "sid": "4033"
+  },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
     "sid": "4645"
@@ -948,7 +948,7 @@
     "sid": "3392"
   },
   "TBN UK": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
     "sid": "3109"
   },
   "TG4 HD": {
@@ -970,10 +970,6 @@
   "TNTSBoxOff2HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-2-uk.png",
     "sid": "1099"
-  },
-  "TNTSBoxOffHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-uk.png",
-    "sid": "1210"
   },
   "TNTSports1 HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-1-uk.png",
@@ -1164,11 +1160,11 @@
     "sid": "2608"
   },
   "Zee TV": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/zee-tv-in.png",
     "sid": "2607"
   },
   "Zee TV HD": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/zee-tv-in.png",
     "sid": "1016"
   },
   "babes&brazzers": {
@@ -1176,7 +1172,7 @@
     "sid": "4197"
   },
   "iON TV": {
-    "icon": null,
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/ion-television-us.png",
     "sid": "4461"
   },
   "revelation": {
