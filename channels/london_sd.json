@@ -419,10 +419,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/comedy-central-extra-uk.png",
     "sid": "1813"
   },
-  "Court TV": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/court-tv-uk.png",
-    "sid": "1207"
-  },
   "Crime+Inv": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/crime-and-investigation-uk.png",
     "sid": "1448"
@@ -1103,6 +1099,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
     "sid": "1413"
   },
+  "Sky BHC HD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
     "sid": "1177"
@@ -1126,10 +1126,6 @@
   "Sky Drama HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-drama-uk.png",
     "sid": "4016"
-  },
-  "Sky Family HD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-family-uk.png",
-    "sid": "4018"
   },
   "Sky Greats HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-greats-uk.png",
@@ -1215,10 +1211,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
   },
-  "SkyMinionsHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-animation-uk.png",
-    "sid": "4033"
-  },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
     "sid": "4645"
@@ -1286,6 +1278,10 @@
   "SkySpMainEvHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4002"
+  },
+  "SkyWickedHD": {
+    "icon": null,
+    "sid": "4018"
   },
   "Smooth": {
     "icon": null,
