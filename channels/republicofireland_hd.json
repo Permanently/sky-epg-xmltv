@@ -719,10 +719,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
     "sid": "1413"
   },
-  "Sky BHC HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
     "sid": "1146"
@@ -746,6 +742,10 @@
   "Sky Drama HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-drama-uk.png",
     "sid": "4016"
+  },
+  "Sky Family HD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-family-uk.png",
+    "sid": "4018"
   },
   "Sky Greats HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-greats-uk.png",
@@ -822,6 +822,10 @@
   "Sky Witness+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
+  },
+  "SkyDirectorsHD": {
+    "icon": null,
+    "sid": "4033"
   },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
@@ -935,10 +939,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4007"
   },
-  "SkyWickedHD": {
-    "icon": null,
-    "sid": "4018"
-  },
   "SonLife": {
     "icon": null,
     "sid": "3392"
@@ -966,6 +966,10 @@
   "TNTSBoxOff2HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-2-uk.png",
     "sid": "1099"
+  },
+  "TNTSBoxOffHD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-uk.png",
+    "sid": "1210"
   },
   "TNTSports1 HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-1-uk.png",

@@ -1087,10 +1087,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
     "sid": "1413"
   },
-  "Sky BHC HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
     "sid": "1177"
@@ -1114,6 +1110,10 @@
   "Sky Drama HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-drama-uk.png",
     "sid": "4016"
+  },
+  "Sky Family HD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-family-uk.png",
+    "sid": "4018"
   },
   "Sky Greats HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-greats-uk.png",
@@ -1191,6 +1191,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
   },
+  "SkyDirectorsHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1136"
@@ -1266,10 +1270,6 @@
   "SkySpMainEvHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4002"
-  },
-  "SkyWickedHD": {
-    "icon": null,
-    "sid": "4018"
   },
   "Smooth": {
     "icon": null,
