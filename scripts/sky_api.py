@@ -337,6 +337,81 @@ def logo_url(name: str, logo_map: dict[str, list[str]]) -> str | None:
     return f"{LOGO_RAW_BASE}/{path}" if path else None
 
 
+# ---- Genres ----------------------------------------------------------------
+
+# Sky's schedule events carry numeric genre codes ("eg" = genre, "esg" = subgenre)
+# with no public name mapping. The names below were derived empirically by sweeping
+# every channel in a full region's line-up and correlating codes with the kind of
+# programming they appear on. Top-level buckets are unambiguous; subgenres are only
+# named where the sampling left no real doubt - unnamed pairs fall back to the
+# top-level category alone.
+GENRE_NAMES = {
+    # 0 = no category (channel idents, filler)
+    1: "Shopping",
+    2: "Kids",
+    3: "Entertainment",
+    4: "Music",
+    5: "Documentary",
+    6: "Movie",
+    7: "Sports",
+}
+
+SUBGENRE_NAMES = {
+    (2, 1): "Cartoons",
+    (2, 5): "Pre-School",
+    (3, 1): "Action",
+    (3, 2): "Comedy",
+    (3, 3): "Crime",
+    (3, 4): "Drama",
+    (3, 5): "Game Show",
+    (3, 6): "Science Fiction",
+    (3, 7): "Soap",
+    (3, 8): "Animation",
+    (3, 10): "Cookery",
+    (3, 11): "Reality",
+    (3, 13): "Gardening",
+    (3, 14): "Travel",
+    (3, 17): "Homes and Property",
+    (3, 18): "Homes and Property",
+    (3, 22): "Antiques",
+    (3, 23): "Motoring",
+    (4, 1): "Classical",
+    (5, 1): "Business",
+    (5, 7): "Politics",
+    (5, 8): "News",
+    (5, 9): "Nature",
+    (5, 10): "Religion",
+    (5, 11): "Science",
+    (5, 14): "History",
+    (6, 1): "Action",
+    (6, 2): "Animation",
+    (6, 4): "Comedy",
+    (6, 5): "Family",
+    (6, 6): "Drama",
+    (6, 8): "Science Fiction",
+    (6, 9): "Thriller",
+    (6, 10): "Horror",
+    (6, 11): "Romance",
+    (6, 13): "Mystery",
+    (6, 14): "Western",
+    (6, 19): "War",
+    (7, 1): "American Football",
+    (7, 2): "Cycling",
+    (7, 4): "Basketball",
+    (7, 6): "Cricket",
+    (7, 7): "Fishing",
+    (7, 8): "Football",
+    (7, 9): "Golf",
+    (7, 11): "Motorsport",
+    (7, 12): "Horse Racing",
+    (7, 13): "Rugby",
+    (7, 17): "Tennis",
+    (7, 18): "Wrestling",
+    (7, 19): "Darts",
+    (7, 20): "Sailing",
+}
+
+
 # ---- XMLTV building --------------------------------------------------------
 
 def xmltv_time(epoch_seconds: int) -> str:
@@ -348,6 +423,11 @@ def clean_synopsis(text: str) -> str:
     if not text:
         return ""
     return re.sub(r"\s*\[[^\]]*\]\s*", " ", text).strip()
+
+
+# Movie synopses end with "(2025)(102 mins)" - the year is the only place Sky
+# exposes a production date in the schedule feed.
+_SYNOPSIS_YEAR_RE = re.compile(r"\(((?:19|20)\d{2})\)\s*\(\d+\s*mins?\)")
 
 
 def escape_xml(text: str) -> str:
@@ -386,9 +466,27 @@ def programme_block(sid: str, event: dict) -> list[str]:
         f'    <title lang="en">{escape_xml(event.get("t", "Unknown"))}</title>',
     ]
 
-    synopsis = clean_synopsis(event.get("sy", ""))
+    raw_synopsis = event.get("sy", "")
+    synopsis = clean_synopsis(raw_synopsis)
     if synopsis:
         lines.append(f'    <desc lang="en">{escape_xml(synopsis)}</desc>')
+
+    year = _SYNOPSIS_YEAR_RE.search(raw_synopsis)
+    if year:
+        lines.append(f"    <date>{year.group(1)}</date>")
+
+    eg, esg = event.get("eg") or 0, event.get("esg") or 0
+    genre = GENRE_NAMES.get(eg)
+    subgenre = SUBGENRE_NAMES.get((eg, esg))
+    # Bucket 5 is Sky's catch-all factual bucket (news, religion, nature, science,
+    # documentaries proper). "Documentary" would be wrong for e.g. rolling news,
+    # so when the specific kind is known, emit it alone.
+    if eg == 5 and subgenre:
+        genre, subgenre = subgenre, None
+    if genre:
+        lines.append(f'    <category lang="en">{genre}</category>')
+    if subgenre:
+        lines.append(f'    <category lang="en">{subgenre}</category>')
 
     programmeuuid = event.get("programmeuuid")
     if programmeuuid:
@@ -404,11 +502,18 @@ def programme_block(sid: str, event: dict) -> list[str]:
     if event.get("hd"):
         lines.append("    <video><quality>HD</quality></video>")
 
+    if event.get("new"):
+        lines.append("    <new />")
+
     if event.get("s"):
         lines.append('    <subtitles type="teletext" />')
 
-    if event.get("new"):
-        lines.append("    <new />")
+    if event.get("signed"):
+        lines.append('    <subtitles type="deaf-signed" />')
+
+    rating = (event.get("r") or "").strip()
+    if rating and rating != "--":
+        lines.append(f'    <rating system="BBFC"><value>{escape_xml(rating)}</value></rating>')
 
     lines.append("  </programme>")
     return lines
