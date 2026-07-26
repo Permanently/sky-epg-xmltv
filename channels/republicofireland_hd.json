@@ -499,6 +499,10 @@
     "icon": null,
     "sid": "1026"
   },
+  "Nick Alvinnn!!!": {
+    "icon": null,
+    "sid": "5527"
+  },
   "Nick Jr+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-plus-uk.png",
     "sid": "5089"
@@ -511,8 +515,8 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-uk.png",
     "sid": "4039"
   },
-  "NickJrPAWPatrol": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-paw-patrol-uk.png",
+  "NickJrPeppa": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-peppa-uk.png",
     "sid": "5192"
   },
   "Nickelodeon": {
@@ -526,10 +530,6 @@
   "NickelodeonHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nickelodeon-uk.png",
     "sid": "4069"
-  },
-  "Nicktoons": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-toons-uk.png",
-    "sid": "5527"
   },
   "Noor TV": {
     "icon": null,
@@ -763,6 +763,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-history-uk.png",
     "sid": "4086"
   },
+  "Sky Jaws HD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "Sky Kids HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
@@ -822,10 +826,6 @@
   "Sky Witness+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
-  },
-  "SkyDirectorsHD": {
-    "icon": null,
-    "sid": "4033"
   },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
@@ -966,10 +966,6 @@
   "TNTSBoxOff2HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-2-uk.png",
     "sid": "1099"
-  },
-  "TNTSBoxOffHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-box-office-uk.png",
-    "sid": "1210"
   },
   "TNTSports1 HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tnt-sports-1-uk.png",
