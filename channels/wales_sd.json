@@ -1,8 +1,4 @@
 {
-  "2026RecapHD": {
-    "icon": null,
-    "sid": "4020"
-  },
   "4seven": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-seven-uk.png",
     "sid": "3150"
@@ -891,10 +887,6 @@
     "icon": null,
     "sid": "3715"
   },
-  "PBC": {
-    "icon": null,
-    "sid": "1011"
-  },
   "PBS America": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/pbs-america-uk.png",
     "sid": "5500"
@@ -1127,10 +1119,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-history-uk.png",
     "sid": "4086"
   },
-  "Sky Jaws HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Sky Kids HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
@@ -1190,6 +1178,10 @@
   "Sky Witness+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
+  },
+  "SkyAnimationHD": {
+    "icon": null,
+    "sid": "4020"
   },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
@@ -1274,6 +1266,10 @@
   "SonLife": {
     "icon": null,
     "sid": "3392"
+  },
+  "Spider-Man HD": {
+    "icon": null,
+    "sid": "4033"
   },
   "TBN UK": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
@@ -1362,10 +1358,6 @@
   "Television X": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/television-x-uk.png",
     "sid": "4192"
-  },
-  "That's TV": {
-    "icon": null,
-    "sid": "1017"
   },
   "Times Radio": {
     "icon": null,
