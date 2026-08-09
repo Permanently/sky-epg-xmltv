@@ -235,10 +235,6 @@
     "icon": null,
     "sid": "1190"
   },
-  "Dunamis TV": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-africa/dunamis-tv-afr.png",
-    "sid": "1191"
-  },
   "E4": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/e-4-uk.png",
     "sid": "1637"
@@ -535,6 +531,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/ireland/oireachtas-tv-ie.png",
     "sid": "1257"
   },
+  "PBC": {
+    "icon": null,
+    "sid": "1011"
+  },
   "PBS America": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/pbs-america-uk.png",
     "sid": "5500"
@@ -710,6 +710,10 @@
   "Sky Atlantic+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
     "sid": "1413"
+  },
+  "Sky Box Set HD": {
+    "icon": null,
+    "sid": "4033"
   },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
@@ -934,10 +938,6 @@
   "SonLife": {
     "icon": null,
     "sid": "3392"
-  },
-  "Spider-Man HD": {
-    "icon": null,
-    "sid": "4033"
   },
   "TBN UK": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
