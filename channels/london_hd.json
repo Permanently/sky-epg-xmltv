@@ -1283,6 +1283,26 @@
     "icon": null,
     "sid": "3392"
   },
+  "Star Bharat": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-bharat-in.png",
+    "sid": "3608"
+  },
+  "Star Gold": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-gold-in.png",
+    "sid": "3613"
+  },
+  "Star Gold HD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/star-gold-in.png",
+    "sid": "4047"
+  },
+  "Star Plus": {
+    "icon": null,
+    "sid": "1771"
+  },
+  "Star Plus HD": {
+    "icon": null,
+    "sid": "5300"
+  },
   "TBN UK": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
     "sid": "3109"
@@ -1454,26 +1474,6 @@
   "U&Yesterday+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/u-and-yesterday-plus-uk.png",
     "sid": "2615"
-  },
-  "Utsav Bharat": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/utsav-bharat-uk.png",
-    "sid": "3608"
-  },
-  "Utsav Gold": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/utsav-gold-uk.png",
-    "sid": "3613"
-  },
-  "Utsav Gold HD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/utsav-gold-uk.png",
-    "sid": "4047"
-  },
-  "Utsav Plus": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/utsav-plus-uk.png",
-    "sid": "1771"
-  },
-  "Utsav Plus HD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/utsav-plus-uk.png",
-    "sid": "5300"
   },
   "Virgin Radio": {
     "icon": null,
