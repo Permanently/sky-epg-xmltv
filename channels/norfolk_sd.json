@@ -1059,10 +1059,6 @@
     "icon": null,
     "sid": "3650"
   },
-  "Sky Action HD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-action-uk.png",
-    "sid": "4014"
-  },
   "Sky Arts": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-arts-uk.png",
     "sid": "1752"
@@ -1270,6 +1266,10 @@
   "SkySpMainEvHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4002"
+  },
+  "SkyStathamHD": {
+    "icon": null,
+    "sid": "4014"
   },
   "Smooth": {
     "icon": null,
