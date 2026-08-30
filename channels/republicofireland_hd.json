@@ -323,13 +323,13 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/great-mystery-uk.png",
     "sid": "1318"
   },
-  "Great! Romance": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/great-romance-uk.png",
-    "sid": "3643"
-  },
   "Great! TV": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/great-tv-uk.png",
     "sid": "1320"
+  },
+  "Great!Christmas": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/great-christmas-uk.png",
+    "sid": "3643"
   },
   "HUM EUROPE": {
     "icon": null,
@@ -687,6 +687,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sanskar-in.png",
     "sid": "1100"
   },
+  "Sky Action HD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-action-uk.png",
+    "sid": "4014"
+  },
   "Sky Arts": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-arts-uk.png",
     "sid": "1752"
@@ -706,10 +710,6 @@
   "Sky Atlantic+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
     "sid": "1413"
-  },
-  "Sky Box Set HD": {
-    "icon": null,
-    "sid": "4033"
   },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
@@ -758,6 +758,10 @@
   "Sky Kids HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
+  },
+  "Sky LOTR HD": {
+    "icon": null,
+    "sid": "4033"
   },
   "Sky Mix HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-mix-uk.png",
@@ -930,10 +934,6 @@
   "SkySpMainEvHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-main-event-uk.png",
     "sid": "4007"
-  },
-  "SkyStathamHD": {
-    "icon": null,
-    "sid": "4014"
   },
   "SonLife": {
     "icon": null,
