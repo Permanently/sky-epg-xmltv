@@ -651,6 +651,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/high-street-tv-uk.png",
     "sid": "5706"
   },
+  "High Street TV 3": {
+    "icon": null,
+    "sid": "3404"
+  },
   "HobbyMakerHD": {
     "icon": null,
     "sid": "1169"
@@ -779,6 +783,10 @@
     "icon": null,
     "sid": "4460"
   },
+  "MenInBlackHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "More4": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-more-uk.png",
     "sid": "3340"
@@ -863,10 +871,6 @@
     "icon": null,
     "sid": "1026"
   },
-  "Nick Alvinnn!!!": {
-    "icon": null,
-    "sid": "1849"
-  },
   "Nick Jr+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-plus-uk.png",
     "sid": "5089"
@@ -879,8 +883,8 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-uk.png",
     "sid": "4039"
   },
-  "NickJrPeppa": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-peppa-uk.png",
+  "Nick Jr. Too": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-too-uk.png",
     "sid": "4340"
   },
   "Nickelodeon": {
@@ -894,6 +898,10 @@
   "NickelodeonHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nickelodeon-uk.png",
     "sid": "4069"
+  },
+  "Nicktoons": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-toons-uk.png",
+    "sid": "1849"
   },
   "Noor TV": {
     "icon": null,
@@ -1055,10 +1063,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/india/sanskar-in.png",
     "sid": "1100"
   },
-  "Shop Unlimited": {
-    "icon": null,
-    "sid": "3404"
-  },
   "Sikh Channel": {
     "icon": null,
     "sid": "3650"
@@ -1134,10 +1138,6 @@
   "Sky Kids HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
-  },
-  "Sky LOTR HD": {
-    "icon": null,
-    "sid": "4033"
   },
   "Sky Mix HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-mix-uk.png",
