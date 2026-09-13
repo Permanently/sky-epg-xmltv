@@ -767,10 +767,6 @@
     "icon": null,
     "sid": "4460"
   },
-  "MenInBlackHD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "More4": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-more-uk.png",
     "sid": "3340"
@@ -1183,10 +1179,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
   },
-  "SkyAnimationHD": {
-    "icon": null,
-    "sid": "4020"
-  },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1136"
@@ -1195,6 +1187,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
   },
+  "SkyKarateKidHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
     "sid": "4645"
@@ -1202,10 +1198,6 @@
   "SkyPremiereHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-premiere-uk.png",
     "sid": "4021"
-  },
-  "SkySp ActionHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-action-uk.png",
-    "sid": "4022"
   },
   "SkySp F'ball HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-football-uk.png",
@@ -1226,6 +1218,10 @@
   "SkySp Mix HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-mix-uk.png",
     "sid": "4090"
+  },
+  "SkySp NFL HD": {
+    "icon": null,
+    "sid": "4022"
   },
   "SkySp News": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-news-uk.png",
@@ -1290,6 +1286,10 @@
   "Star Plus HD": {
     "icon": null,
     "sid": "5300"
+  },
+  "SuperheroHD": {
+    "icon": null,
+    "sid": "4020"
   },
   "TBN UK": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
