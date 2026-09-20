@@ -511,6 +511,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/euro-news-int.png",
     "sid": "4604"
   },
+  "ExpendablesHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "FRANCE 24 HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/france-24-english-int.png",
     "sid": "1121"
@@ -1182,10 +1186,6 @@
   "SkyDocumntrs": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
-  },
-  "SkyKarateKidHD": {
-    "icon": null,
-    "sid": "4033"
   },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
