@@ -515,10 +515,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/euro-news-int.png",
     "sid": "4604"
   },
-  "ExpendablesHD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "FRANCE 24 HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/france-24-english-int.png",
     "sid": "1121"
@@ -951,8 +947,8 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/qvc-beauty-uk.png",
     "sid": "4105"
   },
-  "QVC Extra": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/qvc-extra-uk.png",
+  "QVC Christmas": {
+    "icon": null,
     "sid": "3359"
   },
   "QVC HD": {
@@ -1179,6 +1175,10 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
     "sid": "2205"
   },
+  "Sky5*MoviesHD": {
+    "icon": null,
+    "sid": "4020"
+  },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1136"
@@ -1186,6 +1186,10 @@
   "SkyDocumntrs": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
+  },
+  "SkyJurassicHD": {
+    "icon": null,
+    "sid": "4033"
   },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
@@ -1282,10 +1286,6 @@
   "Star Plus HD": {
     "icon": null,
     "sid": "5300"
-  },
-  "SuperheroHD": {
-    "icon": null,
-    "sid": "4020"
   },
   "TBN UK": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/tbn-uk.png",
