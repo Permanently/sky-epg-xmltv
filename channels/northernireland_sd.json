@@ -375,6 +375,14 @@
     "icon": null,
     "sid": "1850"
   },
+  "Christmas24": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/christmas-24-uk.png",
+    "sid": "4420"
+  },
+  "Christmas24+": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/christmas-24-uk.png",
+    "sid": "4421"
+  },
   "Classic FM": {
     "icon": null,
     "sid": "3470"
@@ -767,6 +775,10 @@
     "icon": null,
     "sid": "4460"
   },
+  "MockingjayHD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "More4": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-more-uk.png",
     "sid": "3340"
@@ -779,14 +791,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-more-plus-uk.png",
     "sid": "3310"
   },
-  "Movies24": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/movies-24-uk.png",
-    "sid": "4420"
-  },
-  "Movies24+": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/movies-24-uk.png",
-    "sid": "4421"
-  },
   "MstHveIdeasHD": {
     "icon": null,
     "sid": "1089"
@@ -798,6 +802,10 @@
   "My Sky": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/sky.png",
     "sid": "8040"
+  },
+  "MysteryX": {
+    "icon": null,
+    "sid": "1879"
   },
   "NDTV World": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/ndtv-24x7-uk.png",
@@ -851,6 +859,10 @@
     "icon": null,
     "sid": "1026"
   },
+  "Nick Alvinnn!!!": {
+    "icon": null,
+    "sid": "1849"
+  },
   "Nick Jr+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-plus-uk.png",
     "sid": "5089"
@@ -878,10 +890,6 @@
   "NickelodeonHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nickelodeon-uk.png",
     "sid": "4069"
-  },
-  "Nicktoons": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-toons-uk.png",
-    "sid": "1849"
   },
   "Noor TV": {
     "icon": null,
@@ -1075,10 +1083,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-uk.png",
     "sid": "4053"
   },
-  "Sky Atlantic+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-plus-uk.png",
-    "sid": "1413"
-  },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
     "sid": "1177"
@@ -1095,10 +1099,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-crime-uk.png",
     "sid": "1212"
   },
-  "Sky Crime+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-crime-plus-uk.png",
-    "sid": "4330"
-  },
   "Sky Drama HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-drama-uk.png",
     "sid": "4016"
@@ -1114,10 +1114,6 @@
   "Sky History": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-history-uk.png",
     "sid": "1875"
-  },
-  "Sky History2": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-history-2-uk.png",
-    "sid": "1879"
   },
   "Sky HistoryHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-history-uk.png",
@@ -1179,10 +1175,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-uk.png",
     "sid": "4066"
   },
-  "Sky Witness+1": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-plus-uk.png",
-    "sid": "2205"
-  },
   "Sky5*MoviesHD": {
     "icon": null,
     "sid": "4020"
@@ -1194,10 +1186,6 @@
   "SkyDocumntrs": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
     "sid": "1127"
-  },
-  "SkyJurassicHD": {
-    "icon": null,
-    "sid": "4033"
   },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
@@ -1254,10 +1242,6 @@
   "SkySp+ HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-plus-hz-uk.png",
     "sid": "3940"
-  },
-  "SkySpBoxOffHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-box-office-uk.png",
-    "sid": "1035"
   },
   "SkySpCricket HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-cricket-uk.png",
