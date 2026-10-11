@@ -631,6 +631,10 @@
     "icon": null,
     "sid": "1069"
   },
+  "Halloween HD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "Heart": {
     "icon": null,
     "sid": "2909"
@@ -790,10 +794,6 @@
   "Madani Chnl": {
     "icon": null,
     "sid": "4460"
-  },
-  "MockingjayHD": {
-    "icon": null,
-    "sid": "4033"
   },
   "More4": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/4-more-uk.png",
@@ -1159,10 +1159,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-max-uk.png",
     "sid": "4061"
   },
-  "Sky ScFi/HorHD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-sci-fi-and-horror-uk.png",
-    "sid": "4017"
-  },
   "Sky Sci-Fi": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sci-fi-uk.png",
     "sid": "2505"
@@ -1183,7 +1179,7 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-uk.png",
     "sid": "4066"
   },
-  "Sky5*MoviesHD": {
+  "SkyAnimationHD": {
     "icon": null,
     "sid": "4020"
   },
@@ -1250,6 +1246,10 @@
   "SkySp+ HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-plus-hz-uk.png",
     "sid": "3940"
+  },
+  "SkySpBoxOffHD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-box-office-uk.png",
+    "sid": "1035"
   },
   "SkySpCricket HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sports-cricket-uk.png",
