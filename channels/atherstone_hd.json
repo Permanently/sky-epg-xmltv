@@ -19,8 +19,8 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/5-action-uk.png",
     "sid": "1036"
   },
-  "5SELECT": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/5-select-uk.png",
+  "5DRAMA": {
+    "icon": null,
     "sid": "3028"
   },
   "5STAR": {
@@ -583,10 +583,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/gemporia-uk.png",
     "sid": "1042"
   },
-  "Get Sky Products": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/sky.png",
-    "sid": "8459"
-  },
   "Gold Radio": {
     "icon": null,
     "sid": "2903"
@@ -646,10 +642,6 @@
   "Heart Dance": {
     "icon": null,
     "sid": "2920"
-  },
-  "Help and Support": {
-    "icon": null,
-    "sid": "8331"
   },
   "High Street TV 1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/high-street-tv-uk.png",
@@ -807,14 +799,6 @@
     "icon": null,
     "sid": "1089"
   },
-  "My Account": {
-    "icon": null,
-    "sid": "8266"
-  },
-  "My Sky": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/misc/media/sky.png",
-    "sid": "8040"
-  },
   "MysteryX": {
     "icon": null,
     "sid": "1879"
@@ -947,10 +931,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/premier-sports-2-uk.png",
     "sid": "1290"
   },
-  "Program Your Remote": {
-    "icon": null,
-    "sid": "8301"
-  },
   "QTV Religious": {
     "icon": null,
     "sid": "1009"
@@ -1018,10 +998,6 @@
   "Really+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/really-plus-uk.png",
     "sid": "1015"
-  },
-  "Reset your PIN": {
-    "icon": null,
-    "sid": "8346"
   },
   "Rewind TV": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/rewind-tv-uk.png",
