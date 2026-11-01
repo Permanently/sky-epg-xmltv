@@ -7,6 +7,10 @@
     "icon": null,
     "sid": "4265"
   },
+  "ARY World": {
+    "icon": null,
+    "sid": "1026"
+  },
   "ATN": {
     "icon": null,
     "sid": "6753"
@@ -482,10 +486,6 @@
   "NatGeoWild HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/national-geographic-wild-uk.png",
     "sid": "4025"
-  },
-  "New Vision TV": {
-    "icon": null,
-    "sid": "1026"
   },
   "Nick Alvinnn!!!": {
     "icon": null,
