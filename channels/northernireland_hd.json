@@ -623,10 +623,6 @@
     "icon": null,
     "sid": "1069"
   },
-  "Halloween HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Heart": {
     "icon": null,
     "sid": "2909"
@@ -843,10 +839,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/national-geographic-wild-uk.png",
     "sid": "4025"
   },
-  "Nick Alvinnn!!!": {
-    "icon": null,
-    "sid": "1849"
-  },
   "Nick Jr+1": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-plus-uk.png",
     "sid": "5089"
@@ -859,8 +851,12 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-uk.png",
     "sid": "4039"
   },
-  "Nick Jr. Too": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-too-uk.png",
+  "Nick SpongeBob": {
+    "icon": null,
+    "sid": "1849"
+  },
+  "NickJrPeppa": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/nick-jr-peppa-uk.png",
     "sid": "4340"
   },
   "Nickelodeon": {
@@ -1055,6 +1051,14 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-uk.png",
     "sid": "4053"
   },
+  "Sky Batman HD": {
+    "icon": null,
+    "sid": "4033"
+  },
+  "Sky Christmas HD": {
+    "icon": null,
+    "sid": "4020"
+  },
   "Sky Comedy": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-comedy-uk.png",
     "sid": "1177"
@@ -1123,13 +1127,17 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-max-uk.png",
     "sid": "4061"
   },
+  "Sky ScFi/HorHD": {
+    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-sci-fi-and-horror-uk.png",
+    "sid": "4017"
+  },
   "Sky Sci-Fi": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sci-fi-uk.png",
     "sid": "2505"
   },
   "Sky Sci-Fi HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-sci-fi-uk.png",
-    "sid": "4017"
+    "sid": "4074"
   },
   "Sky Thriller HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-cinema-thriller-uk.png",
@@ -1142,10 +1150,6 @@
   "Sky Witness HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-witness-uk.png",
     "sid": "4066"
-  },
-  "SkyAnimationHD": {
-    "icon": null,
-    "sid": "4020"
   },
   "SkyDocmntrsHD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
