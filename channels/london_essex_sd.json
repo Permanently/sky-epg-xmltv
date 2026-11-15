@@ -831,10 +831,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/now-rock-uk.png",
     "sid": "3682"
   },
-  "NTD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/ntd-int.png",
-    "sid": "3731"
-  },
   "NTV": {
     "icon": null,
     "sid": "4540"
@@ -1063,10 +1059,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-uk.png",
     "sid": "4053"
   },
-  "Sky Batman HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Sky Christmas HD": {
     "icon": null,
     "sid": "4020"
@@ -1110,6 +1102,10 @@
   "Sky Kids HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
+  },
+  "Sky M:I HD": {
+    "icon": null,
+    "sid": "4033"
   },
   "Sky Mix HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-mix-uk.png",

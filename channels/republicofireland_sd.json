@@ -459,10 +459,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/nhk-world-hd-int.png",
     "sid": "3147"
   },
-  "NTD": {
-    "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/international/ntd-int.png",
-    "sid": "3731"
-  },
   "NTV": {
     "icon": null,
     "sid": "4540"
@@ -691,10 +687,6 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-atlantic-uk.png",
     "sid": "4053"
   },
-  "Sky Batman HD": {
-    "icon": null,
-    "sid": "4033"
-  },
   "Sky Christmas HD": {
     "icon": null,
     "sid": "4020"
@@ -739,9 +731,13 @@
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-kids-uk.png",
     "sid": "1147"
   },
+  "Sky M:I HD": {
+    "icon": null,
+    "sid": "4033"
+  },
   "Sky Mix HD": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-mix-uk.png",
-    "sid": "3052"
+    "sid": "1831"
   },
   "Sky Nature": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-nature-uk.png",
@@ -797,7 +793,7 @@
   },
   "SkyDocumntrs": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-kingdom/sky-documentaries-uk.png",
-    "sid": "1230"
+    "sid": "1127"
   },
   "SkyNewsArabia": {
     "icon": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/world-middle-east/sky-news-arabia-mea.png",
